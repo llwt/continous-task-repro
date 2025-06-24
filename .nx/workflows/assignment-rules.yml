@@ -1,0 +1,12 @@
+assignment-rules:
+  - targets:
+      - test
+    run-on:
+      - agent: linux-medium-js
+    parallelism: 1
+  
+  - targets:
+      - "*"
+    run-on:
+      - agent: linux-medium-js
+    parallelism: 3
