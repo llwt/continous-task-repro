@@ -1,0 +1,32 @@
+{
+  "name": "@continous-task-repro/lib-2",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "development": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "nx": {
+    "name": "lib-2",
+    "targets": {
+      "setup-docker": {
+        "command": "echo 'Setting up docker' && sleep 5 && echo 'Docker setup complete'"
+      },
+      "verify-docker-connection": {
+        "command": "echo 'Verifying docker connection' && sleep 1 && echo 'Docker connection verified'"
+      }
+    }
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
