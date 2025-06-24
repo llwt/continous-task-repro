@@ -38,10 +38,15 @@
   ],
   "targetDefaults": {
     "test": {
+      "cache": true,
       "dependsOn": ["^build", "setup-docker", "verify-docker-connection"]
     },
     "verify-docker-connection": {
+      "cache": false,
       "dependsOn": ["setup-docker"]
+    },
+    "setup-docker": {
+      "cache": false
     }
   }
 }
