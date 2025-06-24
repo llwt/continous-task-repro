@@ -38,7 +38,10 @@
   ],
   "targetDefaults": {
     "test": {
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build", "setup-docker", "verify-docker-connection"]
+    },
+    "verify-docker-connection": {
+      "dependsOn": ["setup-docker"]
     }
   }
 }
