@@ -52,5 +52,5 @@
     //   "dependsOn": ["task-*"]
     // }
   },
-  "bust": 1
+  "bust": 2
 }
