@@ -28,18 +28,4 @@ describe('lib1', () => {
     const end = Date.now();
     expect(end - start).toBeGreaterThan(50000);
   });
-
-  it('should sleep for another 50 seconds', async () => {
-    const start = Date.now();
-    await sleep(50000);
-    const end = Date.now();
-    expect(end - start).toBeGreaterThan(50000);
-  });
-
-  it('should sleep for another 50 seconds again', async () => {
-    const start = Date.now();
-    await sleep(50000);
-    const end = Date.now();
-    expect(end - start).toBeGreaterThan(50000);
-  });
 });
