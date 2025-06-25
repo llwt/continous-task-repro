@@ -23,6 +23,39 @@
       },
       "verify-docker-connection": {
         "command": "echo 'Verifying docker connection 1' && sleep 2 && echo 'Docker connection verified'"
+      },
+      "task-1": {
+        "command": "echo 'Starting task-1' && sleep $((5 + RANDOM % 6)) && echo 'Task-1 complete'"
+      },
+      "task-2": {
+        "command": "echo 'Starting task-2' && sleep $((5 + RANDOM % 6)) && echo 'Task-2 complete'"
+      },
+      "task-3": {
+        "command": "echo 'Starting task-3' && sleep $((5 + RANDOM % 6)) && echo 'Task-3 complete'"
+      },
+      "task-4": {
+        "command": "echo 'Starting task-4' && sleep $((5 + RANDOM % 6)) && echo 'Task-4 complete'"
+      },
+      "task-5": {
+        "command": "echo 'Starting task-5' && sleep $((5 + RANDOM % 6)) && echo 'Task-5 complete'"
+      },
+      "task-6": {
+        "command": "echo 'Starting task-6' && sleep $((5 + RANDOM % 6)) && echo 'Task-6 complete'"
+      },
+      "task-7": {
+        "command": "echo 'Starting task-7' && sleep $((5 + RANDOM % 6)) && echo 'Task-7 complete'"
+      },
+      "task-8": {
+        "command": "echo 'Starting task-8' && sleep $((5 + RANDOM % 6)) && echo 'Task-8 complete'"
+      },
+      "task-9": {
+        "command": "echo 'Starting task-9' && sleep $((5 + RANDOM % 6)) && echo 'Task-9 complete'"
+      },
+      "task-10": {
+        "command": "echo 'Starting task-10' && sleep $((5 + RANDOM % 6)) && echo 'Task-10 complete'"
+      },
+      "misc-tasks": {
+        "command": "echo 'Misc-tasks complete'"
       }
     }
   },

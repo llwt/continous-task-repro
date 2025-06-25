@@ -47,6 +47,9 @@
     },
     "setup-docker": {
       "cache": false
+    },
+    "misc-tasks": {
+      "dependsOn": ["task-*"]
     }
   }
 }
