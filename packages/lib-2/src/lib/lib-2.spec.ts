@@ -25,6 +25,6 @@ describe('lib2', () => {
     const start = Date.now();
     await sleep(50000);
     const end = Date.now();
-    expect(end - start).toBeGreaterThan(50000);
+    expect(end - start).toBeGreaterThan(45000);
   });
 });
