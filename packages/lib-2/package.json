@@ -19,7 +19,7 @@
     "name": "lib-2",
     "targets": {
       "setup-docker": {
-        "command": "echo 'Setting up docker' && sleep 5 && echo 'Docker setup complete'"
+        "command": "echo 'Setting up docker' && mkdir -p packages/lib-2/dist && echo 'lib-2' > packages/lib-2/dist/docker-setup.txt && sleep 5 && echo 'Docker setup complete'"
       },
       "verify-docker-connection": {
         "command": "echo 'Verifying docker connection' && sleep 1 && echo 'Docker connection verified'"
