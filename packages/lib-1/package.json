@@ -19,7 +19,7 @@
     "name": "lib-1",
     "targets": {
       "setup-docker": {
-        "command": "echo 'Setting up docker 1' && mkdir -p packages/lib-1/dist && echo 'lib-1' > packages/lib-1/dist/docker-setup.txt && sleep 5 && echo 'Docker setup complete'"
+        "command": "echo 'Setting up docker 1' && sleep 180 &&mkdir -p packages/lib-1/dist && echo 'lib-1' > packages/lib-1/dist/docker-setup.txt && echo 'Docker setup complete'"
       },
       "verify-docker-connection": {
         "command": "echo 'Verifying docker connection 1' && sleep 2 && echo 'Docker connection verified'"
@@ -55,8 +55,9 @@
         "command": "echo 'Starting task-10' && sleep $((5 + RANDOM % 6)) && echo 'Task-10 complete'"
       },
       "misc-tasks": {
-        "command": "echo 'Misc-tasks complete'"
+        "command": "echo 'Misc-tasks start' && sleep $((5 + RANDOM % 6)) && echo 'Misc-tasks complete'"
       }
+
     }
   },
   "dependencies": {
